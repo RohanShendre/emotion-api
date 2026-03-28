@@ -23,8 +23,8 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 # -----------------------
 # Config
-# -----------------------
-MODEL_DIR = os.getenv("EMOTION_MODEL_DIR", "ShaileshWakpaijan/emotion-model")
+# -----------------------~
+MODEL_DIR = os.getenv("EMOTION_MODEL_DIR", "model/emotion-distilbert")
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 MAX_BATCH = 64
 MAX_INPUT_LENGTH = 512
